@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스튜디오 삼봉 (Studio Sambong) — 뇌절디펜스 공식 지원</title>
+  <meta name="description" content="스튜디오 삼봉(Studio Sambong) 공식 홈페이지 — 모바일 게임 뇌절디펜스(Noejul Defense) 지원, 개인정보처리방침, 계정 삭제 안내" />
+  <link rel="icon" type="image/png" href="./assets/studio-symbol.png" />
+  <style>
+    :root {
+      --bg: #080a14;
+      --card: #121629;
+      --border: rgba(245, 196, 81, 0.22);
+      --gold: #f5c451;
+      --cyan: #5ce1e6;
+      --text: #f3f5fc;
+      --muted: #a8b2cc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Pretendard", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 20% 0%, #192142 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 36px 20px 64px; }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+    .brand img { width: 52px; height: 52px; border-radius: 12px; border: 1px solid var(--border); background: #0d1020; object-fit: cover; }
+    .brand-title { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+    .brand-sub { font-size: 13px; color: var(--gold); font-weight: 600; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    nav a:hover { border-color: var(--gold); color: var(--gold); }
+    .hero {
+      margin-top: 28px;
+      background: linear-gradient(145deg, rgba(24, 30, 56, 0.92), rgba(14, 18, 34, 0.96));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero img {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      border: 2px solid rgba(245, 196, 81, 0.45);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }
+    .hero-body { flex: 1 1 260px; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #0b0e19;
+      background: var(--gold);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: -0.02em; }
+    p { margin: 0 0 10px; color: var(--muted); }
+    .meta-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12.5px;
+      color: var(--cyan);
+      background: rgba(92, 225, 230, 0.08);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 14px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: var(--gold); }
+    .card h2 { margin: 0 0 8px; font-size: 17px; color: var(--gold); }
+    .card p { font-size: 13.5px; margin: 0 0 12px; }
+    .card-link { font-size: 13px; font-weight: 700; color: var(--cyan); }
+    .contact-box {
+      margin-top: 24px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .contact-box h2 { margin: 0 0 8px; font-size: 17px; }
+    .contact-box a { color: var(--gold); text-decoration: none; font-weight: 700; }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 12.5px;
+      color: #848fae;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html">
+        <img src="./assets/studio-symbol.png" alt="스튜디오 삼봉 심볼" />
+        <div>
+          <div class="brand-title">스튜디오 삼봉 · Studio Sambong</div>
+          <div class="brand-sub">Mobile Game Studio</div>
+        </div>
+      </a>
+      <nav>
+        <a href="./privacy.html">개인정보처리방침</a>
+        <a href="./delete-account.html">계정·데이터 삭제</a>
+        <a href="./app-ads.txt">app-ads.txt</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="./assets/noejul-icon.png" alt="뇌절디펜스 앱 아이콘" />
+      <div class="hero-body">
+        <span class="badge">ANDROID · MOBILE DEFENSE GAME</span>
+        <h1>뇌절디펜스 (Noejul Defense)</h1>
+        <p>스튜디오 삼봉에서 제작·운영하는 모바일 보석 세공 머지 타워 디펜스 게임의 공식 안내 및 정책 지원 페이지입니다.</p>
+        <span class="meta-code">Package ID: com.sambong.noejuldefence</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <a class="card" href="./privacy.html">
+        <div>
+          <h2>📜 개인정보처리방침</h2>
+          <p>Firebase 인증·클라우드 저장, Play 결제 및 AdMob 보상형 광고와 관련한 개인정보 수집·이용·보관 기준을 안내합니다.</p>
+        </div>
+        <span class="card-link">Privacy Policy 보기 →</span>
+      </a>
+      <a class="card" href="./delete-account.html">
+        <div>
+          <h2>🗑️ 계정 및 데이터 삭제</h2>
+          <p>인앱 초기화 방법 및 앱 삭제 후에도 클라우드 세이브·계정 연동을 영구 삭제 요청할 수 있는 절차를 제공합니다.</p>
+        </div>
+        <span class="card-link">Account Deletion 안내 →</span>
+      </a>
+      <a class="card" href="./app-ads.txt">
+        <div>
+          <h2>🛡️ 공인 디지털 광고 판매자</h2>
+          <p>Google AdMob 공식 인증용 app-ads.txt 파일입니다. 광고주 무결성 확인을 위해 루트 경로에서 제공됩니다.</p>
+        </div>
+        <span class="card-link">app-ads.txt 확인 →</span>
+      </a>
+    </section>
+
+    <section class="contact-box">
+      <h2>📩 개발사 문의 및 고객지원 (Support & Contact)</h2>
+      <p>게임 이용 문의, 결제 복원 지원, 개인정보 보호 및 삭제 요청은 아래 공식 이메일로 연락해 주세요.</p>
+      <p>
+        이메일: <a href="mailto:official@studiosambong.com">official@studiosambong.com</a><br />
+        English Support: For privacy inquiries, billing help, or data deletion requests regarding <strong>Noejul Defense</strong> (<code>com.sambong.noejuldefence</code>), contact <strong>Studio Sambong</strong> at <a href="mailto:official@studiosambong.com">official@studiosambong.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <span>© 2026 스튜디오 삼봉 (Studio Sambong). All rights reserved.</span>
+      <span>Official Domain: studiosambong.com</span>
+    </footer>
+  </div>
+</body>
+</html>

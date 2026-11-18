@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 | 스튜디오 삼봉 - 뇌절디펜스</title>
+  <link rel="icon" type="image/png" href="./assets/studio-symbol.png" />
+  <style>
+    :root {
+      --bg: #080a14;
+      --card: #121629;
+      --border: rgba(245, 196, 81, 0.22);
+      --gold: #f5c451;
+      --cyan: #5ce1e6;
+      --text: #eef1fb;
+      --muted: #b3bdd6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.72;
+    }
+    .wrap { max-width: 840px; margin: 0 auto; padding: 32px 20px 64px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 24px;
+    }
+    header a.home { display: flex; align-items: center; gap: 10px; color: var(--gold); text-decoration: none; font-weight: 800; }
+    header img { width: 36px; height: 36px; border-radius: 8px; }
+    nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    nav a:hover { border-color: var(--gold); color: var(--gold); }
+    article {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    h1 { margin: 0 0 8px; font-size: 24px; color: var(--gold); }
+    .meta { font-size: 13px; color: var(--cyan); margin-bottom: 22px; }
+    h2 { margin: 26px 0 10px; font-size: 17.5px; color: #ffffff; border-left: 3px solid var(--gold); padding-left: 10px; }
+    p, li { color: var(--muted); font-size: 14.5px; }
+    ul { padding-left: 20px; margin: 8px 0 14px; }
+    a { color: var(--gold); }
+    hr.sep { border: none; border-top: 1px dashed rgba(255, 255, 255, 0.14); margin: 34px 0; }
+    .en-block h1 { font-size: 21px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="home" href="./index.html">
+        <img src="./assets/studio-symbol.png" alt="스튜디오 삼봉" />
+        <span>← 스튜디오 삼봉 (Studio Sambong)</span>
+      </a>
+      <nav>
+        <a href="./index.html">홈</a>
+        <a href="./delete-account.html">계정·데이터 삭제 안내</a>
+      </nav>
+    </header>
+
+    <article>
+      <h1>개인정보처리방침 (Privacy Policy)</h1>
+      <div class="meta">운영자: 스튜디오 삼봉 (Studio Sambong) · 대상 앱: 뇌절디펜스 (com.sambong.noejuldefence) · 시행일: 2026년 11월 18일</div>
+
+      <p><strong>스튜디오 삼봉(이하 "회사")</strong>은 모바일 게임 <strong>「뇌절디펜스」(Noejul Defense, 패키지명: com.sambong.noejuldefence)</strong> 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 및 Google Play 정책 등 관련 법령을 준수합니다.</p>
+
+      <h2>1. 수집하는 개인정보 항목 및 수집 목적</h2>
+      <p>회사는 게임 제공, 클라우드 세이브 동기화, 유료 상품 복원, 보상형 광고 제공 및 서비스 품질 개선을 위해 최소한의 정보만을 처리합니다.</p>
+      <ul>
+        <li><strong>계정 및 클라우드 저장 (Firebase Authentication · Cloud Firestore)</strong>: 익명 로그인 시 발급되는 Firebase UID, 이용자가 Google 계정 연동을 직접 선택한 경우 Google 계정 식별자(UID), 이메일 주소, 표시 이름(닉네임) 및 게임 진행 데이터(레벨, 환생·유물·업적·상점 권한 정보).</li>
+        <li><strong>인앱 결제 및 구매 복원 (Google Play Billing)</strong>: 주문 번호(<code>orderId</code>), 구매 토큰(<code>purchaseToken</code>), 구매 상품 식별자(예: <code>noejul_master_pass_permanent</code>). <em>신용카드 번호·계좌 등 결제 수단 정보는 Google Play에서 직접 처리하며 회사는 수집·저장하지 않습니다.</em></li>
+        <li><strong>보상형 광고 (Google AdMob)</strong>: Google 광고 ID(AD_ID / GAID), IP 기반 대략적 지역 정보, 광고 노출·보상 완료 여부 및 오류 진단 정보.</li>
+        <li><strong>서비스 통계 및 오류 분석 (Firebase Analytics / GA4)</strong>: 앱 실행, 튜토리얼 달성, 스테이지·던전 진행, 광고 시청 완료 및 크래시/성능 진단 이벤트(비식별 통계).</li>
+      </ul>
+
+      <h2>2. 개인정보의 제3자 제공 및 처리 위탁</h2>
+      <p>회사는 원칙적으로 이용자의 동의 없이 개인정보를 외부에 판매하거나 임의로 제공하지 않습니다. 다만 로그인·클라우드 저장·결제·광고 제공을 위해 아래 Google 플랫폼 서비스 SDK를 사용하며, 각 서비스의 개인정보 보호 정책이 함께 적용됩니다.</p>
+      <ul>
+        <li><strong>제공/처리 파트너</strong>: Google LLC (Firebase Authentication, Cloud Firestore 서울 리전 <code>asia-northeast3</code>, Google Analytics for Firebase, Google AdMob, Google Play Billing)</li>
+        <li><strong>Google 개인정보처리방침</strong>: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h2>3. 보유 및 이용 기간</h2>
+      <ul>
+        <li><strong>게임 세이브 및 계정 정보</strong>: 이용자가 계정 및 데이터 삭제를 요청하거나 서비스가 종료될 때까지 보관 후 지체 없이 파기합니다.</li>
+        <li><strong>결제 및 환불 관련 기록</strong>: 「전자상거래 등에서의 소비자보호에 관한 법률」 등 관계 법령에 따라 계약·청약철회 및 대금결제·재화 공급 기록(5년) 등 법정 보존 의무 기간 동안 Google Play 기록 및 관련 증빙이 보관될 수 있습니다.</li>
+      </ul>
+
+      <h2>4. 이용자의 권리 및 광고 식별자 재설정</h2>
+      <ul>
+        <li>이용자는 언제든지 인앱 <strong>⚙️ 환경설정 → ⚠️ 데이터 초기화</strong>를 통해 기기 내 저장 데이터를 즉시 삭제할 수 있습니다.</li>
+        <li>연동된 Google 계정 및 Cloud Firestore 클라우드 저장 데이터의 영구 삭제 절차는 <a href="./delete-account.html">계정 및 데이터 삭제 요청 안내 페이지</a>에서 확인하실 수 있습니다.</li>
+        <li><strong>맞춤형 광고 및 광고 ID 관리</strong>: Android 기기의 <em>설정 → Google → 광고</em> 메뉴에서 광고 ID를 재설정하거나 삭제하여 맞춤형 광고 수신을 거부할 수 있습니다.</li>
+      </ul>
+
+      <h2>5. 아동의 개인정보 보호</h2>
+      <p>회사는 관련 법령상 동의 연령(만 14세 미만 등 각국 기준) 미만의 아동으로부터 법정대리인 동의 없이 개인정보를 고의로 수집하지 않습니다. 아동의 정보가 부적절하게 수집된 것으로 확인될 경우 즉시 삭제 조치합니다.</p>
+
+      <h2>6. 개인정보 보호책임자 및 문의처</h2>
+      <ul>
+        <li>상호: 스튜디오 삼봉 (Studio Sambong)</li>
+        <li>문의 이메일: <a href="mailto:official@studiosambong.com">official@studiosambong.com</a></li>
+      </ul>
+
+      <hr class="sep" />
+
+      <div class="en-block">
+        <h1>Privacy Policy (English Summary)</h1>
+        <div class="meta">Developer: Studio Sambong · App: Noejul Defense (com.sambong.noejuldefence) · Effective: November 18, 2026</div>
+        <p><strong>Studio Sambong</strong> ("we", "our") respects your privacy in <strong>Noejul Defense</strong> (<code>com.sambong.noejuldefence</code>).</p>
+        <ul>
+          <li><strong>Authentication & Cloud Saves</strong>: Firebase Authentication assigns an anonymous UID or, if you choose Google Sign-In, collects your Google UID, email, and display name solely to sync your game save to Cloud Firestore (<code>asia-northeast3</code>).</li>
+          <li><strong>In-App Purchases</strong>: Processed strictly by Google Play Billing. We only receive purchase tokens/order IDs to verify and restore non-consumable entitlements such as the Master Pass.</li>
+          <li><strong>Rewarded Ads & Analytics</strong>: Powered by Google AdMob (optional rewarded video ads only; no forced interstitials) and Google Analytics for Firebase using Android Advertising ID and non-personally-identifiable gameplay events.</li>
+          <li><strong>Google Privacy Policy</strong>: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li><strong>Data Deletion & Contact</strong>: Follow our <a href="./delete-account.html">Account & Data Deletion Guide</a> or email <a href="mailto:official@studiosambong.com">official@studiosambong.com</a>.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
