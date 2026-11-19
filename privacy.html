@@ -88,15 +88,19 @@
       <ul>
         <li><strong>계정 및 클라우드 저장 (Firebase Authentication · Cloud Firestore)</strong>: 익명 로그인 시 발급되는 Firebase UID, 이용자가 Google 계정 연동을 직접 선택한 경우 Google 계정 식별자(UID), 이메일 주소, 표시 이름(닉네임) 및 게임 진행 데이터(레벨, 환생·유물·업적·상점 권한 정보).</li>
         <li><strong>인앱 결제 및 구매 복원 (Google Play Billing)</strong>: 주문 번호(<code>orderId</code>), 구매 토큰(<code>purchaseToken</code>), 구매 상품 식별자(예: <code>noejul_master_pass_permanent</code>). <em>신용카드 번호·계좌 등 결제 수단 정보는 Google Play에서 직접 처리하며 회사는 수집·저장하지 않습니다.</em></li>
-        <li><strong>보상형 광고 (Google AdMob)</strong>: Google 광고 ID(AD_ID / GAID), IP 기반 대략적 지역 정보, 광고 노출·보상 완료 여부 및 오류 진단 정보.</li>
+        <li><strong>보상형 광고 및 미디에이션 (Google AdMob Mediation · UMP)</strong>: 광고 ID(AD_ID / GAID), IP 기반 대략적 지역 정보, 기기 정보, 광고 노출·보상 완료 여부 및 개인정보 동의 상태(GDPR/미국 주별 규정)가 Google AdMob 및 제휴 미디에이션 파트너를 통해 처리될 수 있습니다.</li>
         <li><strong>서비스 통계 및 오류 분석 (Firebase Analytics / GA4)</strong>: 앱 실행, 튜토리얼 달성, 스테이지·던전 진행, 광고 시청 완료 및 크래시/성능 진단 이벤트(비식별 통계).</li>
       </ul>
 
       <h2>2. 개인정보의 제3자 제공 및 처리 위탁</h2>
-      <p>회사는 원칙적으로 이용자의 동의 없이 개인정보를 외부에 판매하거나 임의로 제공하지 않습니다. 다만 로그인·클라우드 저장·결제·광고 제공을 위해 아래 Google 플랫폼 서비스 SDK를 사용하며, 각 서비스의 개인정보 보호 정책이 함께 적용됩니다.</p>
+      <p>회사는 원칙적으로 이용자의 동의 없이 개인정보를 외부에 판매하거나 임의로 제공하지 않습니다. 다만 로그인·클라우드 저장·결제·선택형 보상형 광고 미디에이션 제공을 위해 아래 플랫폼 및 광고 파트너 SDK를 사용하며, 각 파트너의 개인정보 보호 정책이 함께 적용됩니다.</p>
       <ul>
-        <li><strong>제공/처리 파트너</strong>: Google LLC (Firebase Authentication, Cloud Firestore 서울 리전 <code>asia-northeast3</code>, Google Analytics for Firebase, Google AdMob, Google Play Billing)</li>
-        <li><strong>Google 개인정보처리방침</strong>: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+        <li><strong>플랫폼 및 기본 광고·결제</strong>: Google LLC (Firebase Authentication, Cloud Firestore 서울 리전 <code>asia-northeast3</code>, Google Analytics for Firebase, Google AdMob / UMP, Google Play Billing) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">개인정보처리방침</a></li>
+        <li><strong>Unity Ads (Unity Technologies)</strong>: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">https://unity.com/legal/privacy-policy</a></li>
+        <li><strong>AppLovin</strong>: <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">https://www.applovin.com/privacy/</a></li>
+        <li><strong>Meta Audience Network</strong>: <a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">https://www.facebook.com/about/privacy</a></li>
+        <li><strong>Pangle (ByteDance / TikTok)</strong>: <a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">https://www.pangleglobal.com/privacy</a></li>
+        <li><strong>Mintegral</strong>: <a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">https://www.mintegral.com/en/privacy/</a></li>
       </ul>
 
       <h2>3. 보유 및 이용 기간</h2>
@@ -130,8 +134,8 @@
         <ul>
           <li><strong>Authentication & Cloud Saves</strong>: Firebase Authentication assigns an anonymous UID or, if you choose Google Sign-In, collects your Google UID, email, and display name solely to sync your game save to Cloud Firestore (<code>asia-northeast3</code>).</li>
           <li><strong>In-App Purchases</strong>: Processed strictly by Google Play Billing. We only receive purchase tokens/order IDs to verify and restore non-consumable entitlements such as the Master Pass.</li>
-          <li><strong>Rewarded Ads & Analytics</strong>: Powered by Google AdMob (optional rewarded video ads only; no forced interstitials) and Google Analytics for Firebase using Android Advertising ID and non-personally-identifiable gameplay events.</li>
-          <li><strong>Google Privacy Policy</strong>: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li><strong>Rewarded Ads, Mediation &amp; Consent</strong>: Optional rewarded video ads only (no forced interstitials) powered by Google AdMob Mediation &amp; User Messaging Platform (UMP) alongside mediated partners (Unity Ads, AppLovin, Meta Audience Network, Pangle, and Mintegral) and Google Analytics for Firebase using Android Advertising ID, consent signals, and non-personally-identifiable gameplay events.</li>
+          <li><strong>Partner Privacy Policies</strong>: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> · <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity</a> · <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin</a> · <a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">Meta</a> · <a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">Pangle</a> · <a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">Mintegral</a></li>
           <li><strong>Data Deletion & Contact</strong>: Follow our <a href="./delete-account.html">Account & Data Deletion Guide</a> or email <a href="mailto:official@studiosambong.com">official@studiosambong.com</a>.</li>
         </ul>
       </div>
